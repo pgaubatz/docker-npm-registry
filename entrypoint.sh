@@ -42,7 +42,7 @@ if [ "$1" = "couchdb" ]; then
     curl -X PUT $REGISTRY
 
     # install couchapp
-    cd /usr/local/lib/node_modules/npm-registry-couchapp/
+    cd /usr/local/lib/node_modules/@pgaubatz/npm-registry-couchapp/
     echo "npm-registry-couchapp:couch=$REGISTRY" > .npmrc
     export DEPLOY_VERSION="v$NPM_REGISTRY_COUCHAPP_VERSION"
     npm start

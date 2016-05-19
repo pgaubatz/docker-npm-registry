@@ -36,7 +36,7 @@ RUN sed -i \
     /usr/local/etc/couchdb/local.ini
 
 # download the couchapp
-RUN npm install -g npm-registry-couchapp \
+RUN npm install -g @pgaubatz/npm-registry-couchapp \
     && npm cache clear
 
 # install entrypoint
